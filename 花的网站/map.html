@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<body>
+<div class="ding">
+    <div class="ding1">
+        <div class="logo"><img src="img/logo1.png" alt=""></div>
+        <ul class="shouye">
+            <li><a href="flower.html">首页</a></li>
+            <li><a href="taocan.html">鲜花套餐</a></li>
+            <li><a href="gift.html">礼品鲜花</a></li>
+            <li><a href="wei.html">植物微量</a></li>
+            <li><a href="story.html">鲜花故事</a></li>
+            <li><a href="us.html"><i class="iconfont icon-guanyuwomen"></i>
+                <p>关于我们</p></a></li>
+            <li><a href="map.html">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<section>
+    <div class="banner">
+        <ul class="lunbo">
+            <li><img src="img/249.jpg" alt=""></li>
+            <li><img src="img/259.jpg" alt=""></li>
+            <li><img src="img/347.jpg" alt=""></li>
+            <li><img src="img/356.jpg" alt=""></li>
+            <li><img src="img/23.png" alt=""></li>
+        </ul>
+    </div>
+</section>
+<section>
+    <fieldset>
+        <legend>FLOWERS PACKAGE</legend>
+        <p>联系方式</p>
+    </fieldset>
+    <div class="about">
+        <div class="zhao4">
+            <h4>联系我们</h4>
+            <div class="us">
+                <div class="zuo">
+                    <input type="text" placeholder="你的名字">
+                    <input type="text" placeholder="你的邮箱">
+                </div>
+                <div class="you">
+                    <input type="text" placeholder="你的项目">
+                    <input type="text" placeholder="你的电话号码">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="详细说明..."></textarea>
+                <input type="submit">
+            </div>
+        </div>
+    </div>
+
+</section>
+<section>
+    <fieldset>
+        <legend>FLOWERS PACKAGE</legend>
+        <p>联系地址</p>
+    </fieldset>
+</section>
+<!--百度地图容器-->
+<div style="width:1100px;height:300px;border:#ccc solid 1px;margin: 0 auto;margin-top:50px;margin-bottom: 100px" id="dituContent"></div>
+
+<section>
+    <div class="di">
+        <div class="dis">
+            <li>
+                <i class="iconfont icon-songhuo"></i>
+                <a href="" class="dizi">预约送货服务</a></li>
+            <li>
+                <i class="iconfont icon-tian1"></i>
+                <a href="" class="dizi">7天无理由退货</a>
+            </li>
+            <li>
+                <i class="iconfont icon-tian1"></i>
+                <a href="" class="dizi">15天免费换货</a>
+            </li>
+            <li>
+                <i class="iconfont icon-gift"></i>
+                <a href="" class="dizi">满150元包邮</a>
+            </li>
+            <li>
+                <i class="iconfont icon-site2"></i>
+                <a href="" class="dizi">520余家售后网点</a>
+            </li>
+        </div>
+
+        <div class="center">
+				<span class="cente-left">
+					<div class="cente-zi">
+						<dt>帮助中心</dt>
+						<dd><a href="">账户管理</a></dd>
+						<dd><a href="">购物指南</a></dd>
+						<dd><a href="">订单操作</a></dd>
+					</div>
+					<div class="cente-zi">
+						<dt>服务支持</dt>
+						<dd><a href="">售后政策</a></dd>
+						<dd><a href="">自助服务</a></dd>
+						<dd><a href="">相关下载</a></dd>
+					</div>
+					<div class="cente-zi">
+						<dt>线下门店</dt>
+						<dd><a href="">之家</a></dd>
+						<dd><a href="">服务网点</a></dd>
+						<dd><a href="">门店网点</a></dd>
+					</div>
+					<div class="cente-zi">
+						<dt>关于我们</dt>
+						<dd><a href="">公司简介</a></dd>
+						<dd><a href="">新闻报道</a></dd>
+						<dd><a href="">加入我们</a></dd>
+					</div>
+					<div class="cente-zi">
+						<dt>关注我们</dt>
+						<dd><a href="">新浪微博</a></dd>
+						<dd><a href="">QQ账号</a></dd>
+						<dd><a href="">官方微信</a></dd>
+					</div>
+					<div class="cente-zi">
+						<dt>特色服务</dt>
+						<dd><a href="">F码通道</a></dd>
+						<dd><a href="">礼物码</a></dd>
+						<dd><a href="">防伪查询</a></dd>
+					</div>
+				</span>
+            <span class="cente-right">
+					<p class="tel">123-456-8888</p>
+					<p class="time">周一至周日 8:00-18:00<br>（仅收市话费）</p>
+                    <a href=""class="zxfw">
+                    <i class="iconfont icon-icon"></i>
+                    <div class="zxzi">24小时在线客服</div></a>
+				</span>
+        </div>
+        <div class="di-2">
+            <div class="di-2-left">
+                <!--  <img src="img/20170817162142_07.png" alt=""> -->
+                <div class="img"></div>
+                <div class="di-2-left-right">
+                    <!-- 第一行字开始 -->
+                    <div class="di-2-left-right-zi1">
+                        <ul class="di-2-left-right-zi11">
+                            <li><a href="" class="di-2-left-right-zi11-1">鲜花速递</a></li>
+                            <li><a href="">植物花卉</a></li>
+                            <li><a href="">缤纷设计</a></li>
+                            <li> <a href="">玫瑰之约</a></li>
+                            <li><a href="">花边小物</a></li>
+                            <li><a href="">星座花礼</a></li>
+                            <li><a href="">一周一花</a></li>
+                            <li><a href="">直营店</a>  </li>
+                            <li><a href="">全国订购</a></li>
+                            <li><a href="">永生玫瑰</a></li>
+                            <li><a href="">隐私政策</a></li>
+                            <li class="di-2-left-right-zi11-12"><a href="">Select Region</a></li>
+                        </ul>
+                    </div>
+                    <!-- 第一行字结束 -->
+                    <!-- 第二行字开始 -->
+                    <a href="" class="di-2-left-right-zi2">
+                        ?mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2014]0059-0009号
+                    </a>
+                    <!-- 第二行字结束 -->
+                    <!-- 第三行字开始 -->
+                    <div class="di-2-left-right-zi2">
+                        违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </div>
+                    <!-- 第三行字结束 -->
+                </div>
+            </div>
+            <div class="di-2-right">
+                <!-- 第一张开始 -->
+                <a href="" class="di-2-right-pic1">
+                    <img src="img/truste.png" alt="" class="img11">
+                </a>
+                <!-- 第一张结束 -->
+                <!-- 第二张开始 -->
+                <a href="" class="di-2-right-pic1">
+                    <img src="img/v-logo-2.png" alt="" class="img11">
+                </a>
+                <!-- 第二张结束 -->
+                <!-- 第三张图片开始 -->
+                <a href="" class="di-2-right-pic1">
+                    <img src="img/v-logo-1.png" alt="" class="img11">
+                </a>
+                <!-- 第三张图片结束 -->
+                <!-- 第四张开始 -->
+                <a href="" class="di-2-right-pic1 di-2-right-pic4">
+                    <img src="img/v-logo-3.png" alt="" class="img11">
+                </a>
+                <!-- 第四张结束 -->
+            </div>
+        </div>
+        <!-- 底部2结束 -->
+    </div>
+</section>
+<a href="#top" class="top">
+    <img src="img/top.png" alt="">
+</a>
+
+
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(112.56064,37.813966);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{title:"我的公司",content:"地址：平阳路学府街凯通大厦<br/><br/>电话：123-456-8888<br/><br/>联系人：***",point:"112.560501|37.813652",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor:"#808080",
+                color:"#333",
+                cursor:"pointer"
+            });
+
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
